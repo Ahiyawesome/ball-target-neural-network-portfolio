@@ -326,7 +326,8 @@ public class playerMan : MonoBehaviour
         stepCount = 0;
     }
 
-    void BackPropagation ()
+    void BackPropagation ()  /* Calculates error by taking the derivative of each weight with respect to the probabilities, and updates the weight very slightly 
+                                according to that gradient */
     {
         // Calculating gradient or smthn
         int weightIndex = 0;
